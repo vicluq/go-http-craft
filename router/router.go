@@ -6,7 +6,7 @@ import (
 	"slices"
 	"strings"
 
-	mid "github.com/vicluq/golang-api/shared/middleware"
+	mid "github.com/vicluq/http-shared/middleware"
 )
 
 type routeMap = map[string]http.Handler

@@ -1,7 +1,7 @@
 package router
 
 import (
-	mid "github.com/vicluq/golang-api/shared/middleware"
+	mid "github.com/vicluq/http-shared/middleware"
 )
 
 func NewRouter(path string) *Router {
