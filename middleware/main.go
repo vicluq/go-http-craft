@@ -43,12 +43,3 @@ func Profile() Middleware {
 		})
 	}
 }
-
-// Auth
-func AuthMiddleware() Middleware {
-	return func(next http.Handler) http.Handler {
-		return http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
-
-		})
-	}
-}
