@@ -80,14 +80,14 @@ We perform our middleware logic and call the `next.ServeHTTP(res, req)`, which w
 func AuthMiddleware() m.Middleware {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
-            // Verify auth token
-
-            if is_verified {
-                next.ServeHTTP(res, req) // call the request handler
-            }
-            else {
-                http.Error(res, "Access not allowed.", http.StatusForbidden)
-            }
+	            // Verify auth token
+	
+	            if is_verified {
+	                next.ServeHTTP(res, req) // call the request handler
+	            }
+	            else {
+	                http.Error(res, "Access not allowed.", http.StatusForbidden)
+	            }
 		})
 	}
 }
