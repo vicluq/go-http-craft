@@ -1,6 +1,6 @@
-# HTTP Boost
+# Go HTTP Craft
 
-Golang 1.22 introduced an improved HTTP native module with many new features, which allows us to create servers without the need of extensive libraries easily.
+Golang 1.22 introduced an improved HTTP native module with many new features, which allows us to easily create servers without the need of extensive libraries.
 
 Although it came with greate improvements, some features, such as **routers** and **middlewares** are still important but we must implement it by ourselves.
 
